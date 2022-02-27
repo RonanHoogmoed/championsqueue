@@ -14,11 +14,8 @@
 <?php $matchcount = 0; ?>
 
 <?php foreach ($matches['matches'] as &$value) { ?>
-        <div class="row p-0 bg-dark text-white p-2">
-            <div class="col-12 col-lg-8 p-0">
-                <h5 class="my-1"><?php echo $matches['matches'][$matchcount]['matchStart'] . '<span class="mx-3">|</span>' . $matches['matches'][$matchcount]['gameVersion']; ?></h5>
-            </div>
-            <div class="col-12 col-lg-4 p-0 text-right">
+        <div class="row p-0 bg-dark text-white p-2 rounded-top">
+            <div class="col-12 p-0 text-center">
                 <h5 class="my-1"><?php if($matches['matches'][$matchcount]['teams'][0]['winner']) { echo '1-0'; } else { echo '0-1'; } ?></h5>
             </div>
         </div>
