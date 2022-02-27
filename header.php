@@ -1,4 +1,4 @@
-<?php $home_url = 'http://127.0.0.1/championsqueue/'; ?>
+<?php $home_url = 'https://championsqueue.ronanhoogmoed.com/'; ?>
 
 <?php include 'navbar.php'; ?>
 
