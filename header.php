@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.css" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <title>Ronan's Champions Queue Data</title>
     </head>

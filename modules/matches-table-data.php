@@ -1,4 +1,4 @@
-<div class="row g-0 mb-4 rounded-bottom">
+<div class="row g-0 mb-4 rounded-bottom" data-aos="fade-up">
     <div class="col-12 col-lg-6 p-0">
         <?php
             $playercount = 0;

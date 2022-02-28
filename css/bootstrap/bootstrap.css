@@ -11755,3 +11755,7 @@ legend {
 .list-group-item-action:hover {
   background-color: #23272b;
 }
+
+.text-right {
+    text-align: right !important;
+}
