@@ -36,9 +36,7 @@
                 $player_name = preg_replace($teamlist, '', $player_name);
                 ?>
                 <td class="text-center"><?php echo $leaderboards['leaderboards'][0]['lineup'][$playercount]['rank']; ?></td>
-                <td class="font-weight-bold">
-                    <a href="<?php echo 'playerpage.php?playerid=' . $playercount ?>"><?php echo $player_name; ?></a>
-                </td>
+                <td class="font-weight-bold"><a href="<?php echo 'playerpage.php?playerid=' . $playercount ?>"><?php echo $player_name; ?></a></td>
                 <td class="text-center"><?php echo $leaderboards['leaderboards'][0]['lineup'][$playercount]['lp']; ?></td>
                 <td class="text-center"><?php echo $gamesplayed = $leaderboards['leaderboards'][0]['lineup'][$playercount]['wins']+$leaderboards['leaderboards'][0]['lineup'][$playercount]['losses']; ?></td>
                 <td class="text-center"><?php echo $leaderboards['leaderboards'][0]['lineup'][$playercount]['wins']; ?></td>
