@@ -13,7 +13,7 @@
 ?>
 
 <div class="table-responsive">
-    <table class="table overflow-hidden">
+    <table class="table">
         <tr>
             <th class="text-center">Rank</th>
             <th>Name</th>
@@ -26,7 +26,7 @@
 
         <?php $playercount = 0; ?>
         <?php foreach ($leaderboards['leaderboards'][0]['lineup'] as &$value) { ?>
-            <tr <?php if($playercount < 10) { echo "class='table-primary'"; } else { echo "class='table-active'"; } ?> data-aos="fade-up" >
+            <tr <?php if($playercount < 10) { echo "class='table-primary'"; } else { echo "class='table-active'"; } ?> >
                 <?php
                 $player_name = $leaderboards['leaderboards'][0]['lineup'][$playercount]['name'];
                 include 'data/teamlist.php';
