@@ -37,13 +37,7 @@
                 ?>
                 <td class="text-center"><?php echo $leaderboards['leaderboards'][0]['lineup'][$playercount]['rank']; ?></td>
                 <td class="font-weight-bold">
-                    <?php if(file_exists('player/' . $player_name . '.php')) { ?>
-                    <a href="<?php echo 'player/' . $player_name . '.php?playerid=' . $playercount ?>">
-                        <?php echo $player_name; ?>
-                    </a>
-                    <?php } else { ?>
-                        <?php echo $player_name; ?>
-                    <?php } ?>
+                    <a href="<?php echo 'playerpage.php?playerid=' . $playercount ?>"><?php echo $player_name; ?></a>
                 </td>
                 <td class="text-center"><?php echo $leaderboards['leaderboards'][0]['lineup'][$playercount]['lp']; ?></td>
                 <td class="text-center"><?php echo $gamesplayed = $leaderboards['leaderboards'][0]['lineup'][$playercount]['wins']+$leaderboards['leaderboards'][0]['lineup'][$playercount]['losses']; ?></td>
