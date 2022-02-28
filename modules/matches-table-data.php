@@ -4,7 +4,12 @@
             $playercount = 0;
             foreach ($matches['matches'][$matchcount]['teams'][0]['players'] as &$value) {
                 echo '<table class="table mb-0">';
-                    echo '<tr class="table-primary">';
+                    if($matches['matches'][$matchcount]['teams'][1]['winner']) { 
+                        $winnerstatus = 'table-primary';
+                    } else {
+                        $winnerstatus = 'table-success';
+                    }
+                    echo '<tr class="' . $winnerstatus . '">';
                         $team1player = $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['name'];
                         include 'data/teamlist.php';
                         foreach ($teamlist as &$word) {
@@ -27,7 +32,12 @@
             $playercount = 0;
             foreach ($matches['matches'][$matchcount]['teams'][1]['players'] as &$value) {
                 echo '<table class="table mb-0">';
-                    echo '<tr class="table-danger">';
+                    if($matches['matches'][$matchcount]['teams'][0]['winner']) { 
+                        $winnerstatus = 'table-primary';
+                    } else {
+                        $winnerstatus = 'table-success';
+                    }
+                    echo '<tr class="' . $winnerstatus . '">';
                     $team1player = $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['name'];
                     include 'data/teamlist.php';
                     foreach ($teamlist as &$word) {
