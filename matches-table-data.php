@@ -43,7 +43,11 @@
                     echo '<td style="width: 20%;" class="text-center">' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['kills'] . '/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['deaths'] . '/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['assists'] . '</td>';
                     echo '<td style="width: 18%;">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['spellIcon1'] . '.png">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['spellIcon2'] . '.png">' . '</td>';
                     echo '<td style="width: 20%;">' . '<img src="http://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['championIcon'] . '.png">';
-                    echo '<td class="font-weight-bold text-right" style="width: 30%;">' . $team1player . '</td>';
+                    if(file_exists('player/' . $team1player . '.php')) {
+                        echo '<td class="font-weight-bold text-right" style="width: 30%;"><a href="player/' . $team1player . '.php">' . $team1player . '</a></td>';
+                    } else {
+                        echo '<td class="font-weight-bold text-right" style="width: 30%;">' . $team1player . '</td>';
+                    }
                     echo '</tr>';
                 echo '</table>';
                 $playercount = $playercount + 1;

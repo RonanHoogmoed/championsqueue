@@ -1,5 +1,5 @@
 <?php
-    $matchesfile = file_get_contents("data/matches.json");
+    $matchesfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/matches.json");
     $matches = json_decode($matchesfile, true);
 
     if( !function_exists('ceiling') )
