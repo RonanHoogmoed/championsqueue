@@ -19,7 +19,7 @@
                 <h5 class="my-1"><?php if($matches['matches'][$matchcount]['teams'][0]['winner']) { echo '1-0'; } else { echo '0-1'; } ?></h5>
             </div>
         </div>
-        <?php include 'matches-table-data.php'; ?>
+        <?php include 'modules/matches-table-data.php'; ?>
     </table>
     <?php $matchcount = $matchcount + 1; ?>
 <?php } ?>
