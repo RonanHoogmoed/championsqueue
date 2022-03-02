@@ -10,6 +10,10 @@
                 </div>
 
                 <?php include 'matches-table.php'; ?>
+
+                <div class="mt-5 text-center">
+                    <div class="btn btn-primary load-more">Load more</div>
+                </div>
             </div>
         </div>
     </div>

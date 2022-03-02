@@ -1,4 +1,4 @@
-<div class="row g-0 mb-4 rounded-bottom match" id="match-<?php echo $matchcount; ?>" data-aos="fade-up">
+<div class="row g-0 mb-4 rounded-bottom match" id="match-<?php echo $matchcount; ?>" >
     <div class="col-12 col-lg-6 p-0">
         <?php
             $playercount = 0;

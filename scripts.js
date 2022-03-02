@@ -1,10 +1,21 @@
 $(document).ready(function() {
+    // Show more games
     let i = 0;
-    while (i < 10) {
+    var testvalue = 10;
+
+    while (i < testvalue) {
         $('#match-' + i).removeClass('match');
         i++;
     }
-  AOS.init();
-
-  $( ".loader" ).toggle();
+    $('.load-more').click(function (){
+        testvalue = testvalue + 10;
+        while (i < testvalue) {
+            $('#match-' + i).removeClass('match');
+            i++;
+        }
+    });
+    
+    // Other
+    $( ".loader" ).toggle();
+    AOS.init();
 });
