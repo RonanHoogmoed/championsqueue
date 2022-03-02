@@ -17,7 +17,7 @@
                         }
                         $team1player = preg_replace($teamlist, '', $team1player);
                         echo '<td class="font-weight-bold" style="width: 30%;">' . $team1player . '</td>';
-                        echo '<td style="width: 20%;">' . '<img src="http://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['championIcon'] . '.png">';
+                        echo '<td style="width: 20%;">' . '<img src="https://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['championIcon'] . '.png">';
                         echo '<td style="width: 18%;">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['spellIcon1'] . '.png">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['spellIcon2'] . '.png">' . '</td>';
                         echo '<td style="width: 20%;" class="text-center">' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['kills'] . '/' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['deaths'] . '/' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['assists'] . '</td>';
                         echo '<td class="text-right">' . $matches['matches'][$matchcount]['teams'][0]['players'][$playercount]['cs'] . '</td>';
@@ -47,7 +47,7 @@
                     echo '<td class="">' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['cs'] . '</td>';
                     echo '<td style="width: 20%;" class="text-center">' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['kills'] . '/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['deaths'] . '/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['assists'] . '</td>';
                     echo '<td style="width: 18%;">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['spellIcon1'] . '.png">' . '<img src="spells/spellicon-' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['spellIcon2'] . '.png">' . '</td>';
-                    echo '<td style="width: 20%;">' . '<img src="http://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['championIcon'] . '.png">';
+                    echo '<td style="width: 20%;">' . '<img src="https://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/' . $matches['matches'][$matchcount]['teams'][1]['players'][$playercount]['championIcon'] . '.png">';
                     echo '<td class="font-weight-bold text-right" style="width: 30%;">' . $team1player . '</td>';
                     echo '</tr>';
                 echo '</table>';
