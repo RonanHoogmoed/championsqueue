@@ -1,9 +1,14 @@
-table tbody tr td img {
-  border-radius: 999px;
-  max-width: 30px; }
+table tbody tr td {
+  line-height: 28px; }
+  table tbody tr td img {
+    border-radius: 999px;
+    max-width: 28px; }
 
 img {
   width: 100%;
   height: auto; }
+
+.match {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

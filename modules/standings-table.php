@@ -26,7 +26,7 @@
 
         <?php $playercount = 0; ?>
         <?php foreach ($leaderboards['leaderboards'][0]['lineup'] as &$value) { ?>
-            <tr <?php if($playercount < 10) { echo "class='table-primary'"; } else { echo "class='table-active'"; } ?> >
+            <tr>
                 <?php
                 $player_name = $leaderboards['leaderboards'][0]['lineup'][$playercount]['name'];
                 include 'data/teamlist.php';

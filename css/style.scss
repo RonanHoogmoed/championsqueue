@@ -2,9 +2,11 @@ table {
     tbody {
         tr {
             td {
+                line-height: 28px;
+
                 img {
                     border-radius: 999px;
-                    max-width: 30px;
+                    max-width: 28px;
                 }
             }
         }
@@ -14,4 +16,8 @@ table {
 img {
     width: 100%;
     height: auto;
+}
+
+.match {
+    display: none;
 }

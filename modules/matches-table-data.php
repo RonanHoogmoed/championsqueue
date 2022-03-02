@@ -1,11 +1,11 @@
-<div class="row g-0 mb-4 rounded-bottom" data-aos="fade-up">
+<div class="row g-0 mb-4 rounded-bottom match" id="match-<?php echo $matchcount; ?>" data-aos="fade-up">
     <div class="col-12 col-lg-6 p-0">
         <?php
             $playercount = 0;
             foreach ($matches['matches'][$matchcount]['teams'][0]['players'] as &$value) {
                 echo '<table class="table mb-0">';
                     if($matches['matches'][$matchcount]['teams'][1]['winner']) { 
-                        $winnerstatus = 'table-primary';
+                        $winnerstatus = 'table-danger';
                     } else {
                         $winnerstatus = 'table-success';
                     }
@@ -33,7 +33,7 @@
             foreach ($matches['matches'][$matchcount]['teams'][1]['players'] as &$value) {
                 echo '<table class="table mb-0">';
                     if($matches['matches'][$matchcount]['teams'][0]['winner']) { 
-                        $winnerstatus = 'table-primary';
+                        $winnerstatus = 'table-danger';
                     } else {
                         $winnerstatus = 'table-success';
                     }
