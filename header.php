@@ -1,4 +1,4 @@
-<?php $home_url = 'http://127.0.0.1/championsqueue/'; ?>
+<?php homeUrl(); ?>
 
 <?php include 'functions.php'; ?>
 

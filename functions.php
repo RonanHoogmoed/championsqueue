@@ -1,6 +1,16 @@
 <?php
+// ====================================================================
+// GENERAL
+// ====================================================================
+// Adjusts home URL for local dev
+function homeUrl() {
+    $home_url = 'http://127.0.0.1/championsqueue/';
+}
+
+// ====================================================================
+// DATA
+// ====================================================================
 // Fetches data from json files
-// =========================================================
 function getLeaderboardData() {
     $leaderboardfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/leaderboards.json");
     $leaderboards = json_decode($leaderboardfile, true);
@@ -10,8 +20,10 @@ function getMatchesData() {
     $matches = json_decode($matchesfile, true);
 }
 
+// ====================================================================
+// TEXT CHANGES
+// ====================================================================
 // Removes player's team tags in front of their name
-// =========================================================
 function playerFilter() {
     if(is_file('playerpage.php')) {
         $playername = $leaderboards['leaderboards'][0]['lineup'][$playerid]['name'];
@@ -22,9 +34,7 @@ function playerFilter() {
         $playername = preg_replace($teamlist, '', $playername);
     }
 }
-
 // Rounds up number
-// =========================================================
 function ceiling($number, $significance = 1)
 {
     return ( is_numeric($number) && is_numeric($significance) ) ? (ceil($number/$significance)*$significance) : false;
