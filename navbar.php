@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="<?php echo $home_url; ?>">Ronan's Champions Queue Data</a>
+    <div class="navbar-brand"><img style="max-width: 28px" src="https://ronanhoogmoed.com//img/logo-purple.png" alt=""></div>
+    <a class="navbar-brand" href="<?php echo $home_url; ?>">Champions Queue</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
