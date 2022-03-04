@@ -3,6 +3,21 @@ table tbody tr td {
   table tbody tr td img {
     border-radius: 999px;
     max-width: 28px; }
+table thead th {
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+.tablesorter-headerUnSorted {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==); }
+
+.up {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); }
+
+.down {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); }
 
 img {
   width: 100%;

@@ -17,5 +17,10 @@ $(document).ready(function() {
     
     // Other
     $( ".loader" ).toggle();
+    $("#standings-table").tablesorter({
+        cssAsc: 'up',
+        cssDesc: 'down'
+    });
     AOS.init();
+
 });
