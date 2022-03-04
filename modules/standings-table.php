@@ -1,4 +1,4 @@
-<?php getLeaderboardData(); ?>
+<?php getData(); ?>
 
 <div class="table-responsive">
     <table id="standings-table" class="table tablesorter">

@@ -2,20 +2,17 @@
 // ====================================================================
 // GENERAL
 // ====================================================================
-// Adjusts home URL for local dev
-function homeUrl() {
-    $home_url = 'http://127.0.0.1/championsqueue/';
-}
 
 // ====================================================================
 // DATA
 // ====================================================================
 // Fetches data from json files
-function getLeaderboardData() {
+function getData() {
+    // Leaderboard
     $leaderboardfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/leaderboards.json");
     $leaderboards = json_decode($leaderboardfile, true);
-}
-function getMatchesData() {
+
+    // Games
     $matchesfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/matches.json");
     $matches = json_decode($matchesfile, true);
 }

@@ -1,6 +1,5 @@
 <?php
-    getLeaderboardData();
-    getMatchesData();
+    getData();
 
     $playerid = $_GET['playerid'];
     

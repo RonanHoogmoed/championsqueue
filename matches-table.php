@@ -6,7 +6,7 @@
     4) JS   Use Load More button to query next 10 match_id's
     */
 
-    getMatchesData();
+    getData();
 
     $matchcount = 0;
 
