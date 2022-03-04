@@ -1,9 +1,6 @@
 <?php
-    $matchesfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/matches.json");
-    $leaderboardfile = file_get_contents("https://d1fodqbtqsx6d3.cloudfront.net/leaderboards.json");
-
-    $matches = json_decode($matchesfile, true);
-    $leaderboards = json_decode($leaderboardfile, true);
+    getLeaderboardData();
+    getMatchesData();
 
     $playerid = $_GET['playerid'];
     
