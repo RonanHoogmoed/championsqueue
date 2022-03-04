@@ -38,5 +38,6 @@ $teamlist = array(
     "MUS ",
     "ISU ",
     "3P ",
+    "NR ",
 );
 ?>
