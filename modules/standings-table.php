@@ -1,4 +1,4 @@
-<?php getData(); ?>
+<?php include 'database.php'; ?>
 
 <div class="table-responsive">
     <table id="standings-table" class="table tablesorter">

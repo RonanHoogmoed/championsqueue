@@ -1,5 +1,5 @@
 <?php
-    getData();
+    include 'database.php';
 
     $playerid = $_GET['playerid'];
     
